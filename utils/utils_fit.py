@@ -66,7 +66,7 @@ def fit_one_epoch(model_train, model, yolo_loss, loss_history, optimizer, epoch,
             # save_image(clearimgs[0], './results/clean.png')
             # save_image(images[0], './results/hazy.png')
             loss_contrs = contrast_loss(logits, labels)
-            total_loss = 0.2 * loss_det + wgt[epoch // 5] * loss_l1 + 0.1 * loss_contrs
+            total_loss = 0.2 * loss_det + wgt[epoch // 20] * loss_l1 + 0.1 * loss_contrs
 
             total_loss.backward()
             optimizer.step()
