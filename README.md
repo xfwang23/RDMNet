@@ -30,15 +30,15 @@ This model is built in PyTorch 1.10.1 and trained on Ubuntu 20.04 environment (P
 
 ### 1. Dataset Preparation
 
-We conduct experiments on three weather conditions, including rain, haze, and snow. The training and testing datasets are elaborated in the following, you can download the whole dataset [here](https://pan.baidu.com/s/15M-B-w3Qa6vvmt_871C0nA?pwd=dzts).
+We conduct experiments on three weather conditions, including rain, haze, and snow. The training and testing datasets are elaborated in the following, you can download the whole dataset [here](https://pan.baidu.com/s/154AKOqyzmt2SNZdIIDD6sA?pwd=avnk).
 
-- As for clean images for synthesizing the degraded images, the [VOC dataset](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) is selected and we name it <u>**VOC-Clean**</u>. It includes 9,578 clean images for training and 2,129 clean images for testing. 
+- As for clean images for synthesizing the degraded images, the [VOC dataset](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) is selected, and we name it <u>**VOC-Clean**</u>. It includes 9,578 clean images for training and 2,129 clean images for testing. 
 - As for Rain weather condition, we synthesize the rainy images by the code in `utils/Rain_Synthesizing.py` based on the clean images of VOC dataset, then we construct a rainy dataset named **<u>VOC-Rain</u>**, which consists of  VOC-Rain-train that contains 9,578 rainy images for training and VOC-Rain-test that contains 2,129 rainy images for testing. 
 - As for Haze weather condition, we adopt the hazy dataset synthesized by [TogetherNet](https://github.com/yz-wang/TogetherNet) named **<u>VOC-FOG</u>**,  it consists of  VOC-FOG-train that contains 9,578 hazy images for training and VOC-FOG-test that contains 2,129 hazy images for testing. Additionally, we also adopt the real-world hazy datasets to test the performance of our method, including <u>**Foggy Driving dataset**</u> and <u>**RTTS**</u>.
 - As for Snow weather condition, we synthesize the snowy images by the code in `utils/Snow_Synthesizing.py` based on the clean images of VOC dataset and snow masks of [CSD dataset](https://github.com/weitingchen83/ICCV2021-Single-Image-Desnowing-HDCWNet), then we construct a snowy dataset named **<u>VOC-Snow</u>**, which consists of  VOC-Snow-train that contains 9,578 snowy images for training and VOC-Snow-test that contains 2,129 snowy images for testing. 
 - As for unified object detection in multiple weather scenes, we combine the above four training sets to form a mixed dataset for model's training, and test its performance on their respective test sets (VOC-Clean-test, VOC-Rain-test, VOC-Haze-test, VOC-Snow-test).
 
-It is recommended to put the above four datasets to a directory. We have provide the image paths and labels in text files for training and testing in `Datasets/`, and also, you can generate yourself text files by running `voc_annotation.py`.
+It is recommended to put the above four datasets to a directory. We have provided the image paths and labels in text files for training and testing in `Datasets/`, and also, you can generate yourself text files by running `voc_annotation.py`.
 
 The datasets structure is as follows
 
