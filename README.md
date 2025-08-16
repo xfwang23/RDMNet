@@ -1,4 +1,4 @@
-# [TIV-2024] Degradation Modeling for Restoration-enhanced Object Detection in Adverse Weather Scenes
+# [TIV-2025] Degradation Modeling for Restoration-enhanced Object Detection in Adverse Weather Scenes
 Xiaofeng Wang, Xiao Liu, Hong Yang, Zhengyong Wang, Xiaoyue Wen, [Xiaohai He]([‪https://scholar.google.com.hk/citations?user=go3zwMMAAAAJ&hl=zh-CN), [Linbo Qing](https://scholar.google.com.hk/citations?hl=zh-CN&user=0KRDflwAAAAJ), and [Honggang Chen](https://scholar.google.com/citations?user=qkpb0CMAAAAJ)
 
 [Paper](https://ieeexplore.ieee.org/document/10636782)
