@@ -193,11 +193,10 @@ If this work is helpful for you, please consider citing:
   author={Wang, Xiaofeng and Liu, Xiao and Yang, Hong and Wang, Zhengyong and Wen, Xiaoyue and He, Xiaohai and Qing, Linbo and Chen, Honggang},
   journal={IEEE Transactions on Intelligent Vehicles}, 
   title={Degradation Modeling for Restoration-enhanced Object Detection in Adverse Weather Scenes}, 
-  year={2024},
-  volume={},
-  number={},
-  pages={1-17},
+  year={2025},
+  volume={10},
+  number={3},
+  pages={2064-2079},
   doi={10.1109/TIV.2024.3442924}}
-
 ```
 
