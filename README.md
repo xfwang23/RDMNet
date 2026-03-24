@@ -1,5 +1,5 @@
 # [TIV-2025] Degradation Modeling for Restoration-enhanced Object Detection in Adverse Weather Scenes
-Xiaofeng Wang, Xiao Liu, Hong Yang, Zhengyong Wang, Xiaoyue Wen, [Xiaohai He]([‪https://scholar.google.com.hk/citations?user=go3zwMMAAAAJ&hl=zh-CN), [Linbo Qing](https://scholar.google.com.hk/citations?hl=zh-CN&user=0KRDflwAAAAJ), and [Honggang Chen](https://scholar.google.com/citations?user=qkpb0CMAAAAJ)
+[Xiaofeng Wang](https://scholar.google.com.hk/citations?user=53NLemYAAAAJ&hl=zh-CN), [Xiao Liu](https://scholar.google.com.hk/citations?hl=zh-CN&user=p6UJEDkAAAAJ), Hong Yang, Zhengyong Wang, Xiaoyue Wen, [Xiaohai He]([‪https://scholar.google.com.hk/citations?user=go3zwMMAAAAJ&hl=zh-CN), [Linbo Qing](https://scholar.google.com.hk/citations?hl=zh-CN&user=0KRDflwAAAAJ), and [Honggang Chen](https://scholar.google.com/citations?user=qkpb0CMAAAAJ)
 
 [Paper](https://ieeexplore.ieee.org/document/10636782)
 
@@ -30,7 +30,7 @@ This model is built in PyTorch 1.10.1 and trained on Ubuntu 20.04 environment (P
 
 ### 1. Dataset Preparation
 
-We conduct experiments on three weather conditions, including rain, haze, and snow. The training and testing datasets are elaborated in the following, you can download the whole dataset [here](https://pan.baidu.com/s/154AKOqyzmt2SNZdIIDD6sA?pwd=avnk).
+We conduct experiments on three weather conditions, including rain, haze, and snow. The training and testing datasets are elaborated in the following, you can download the whole dataset at [BaiduDisk](https://pan.baidu.com/s/154AKOqyzmt2SNZdIIDD6sA?pwd=avnk) or [GoogleDrive](https://drive.google.com/file/d/1q07ldCxjyKXasCfKP9p7pWbyRp93KqS9/view?usp=drive_link).
 
 - As for clean images for synthesizing the degraded images, the [VOC dataset](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) is selected, and we name it <u>**VOC-Clean**</u>. It includes 9,578 clean images for training and 2,129 clean images for testing. 
 - As for Rain weather condition, we synthesize the rainy images by the code in `utils/Rain_Synthesizing.py` based on the clean images of VOC dataset, then we construct a rainy dataset named **<u>VOC-Rain</u>**, which consists of  VOC-Rain-train that contains 9,578 rainy images for training and VOC-Rain-test that contains 2,129 rainy images for testing. 
